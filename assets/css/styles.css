@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Young-Serif;
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 400 700;
+}
+
+:root {
+    --paragraph--size: 1rem;
+
+    --weight--400:400;
+    --weight--600:600;
+    --weight--700:700;
+
+    --gray:#f3e5d8;
+    --white:hsl(0, 0%, 100%);
+    --stone--100: hsl(30, 54%, 90%);
+    --stone--150: hsl(30, 18%, 87%);
+    --stone--600: hsl(30, 10%, 34%);
+    --stone--900: hsl(24, 5%, 18%);
+    --brown--800: hsl(14, 45%, 36%);
+    --rose--800: hsl(332, 51%, 32%);
+    --rose--50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--gray);
+    font-family: Outfit, sans-serif;
+    font-size: var(--paragraph--size);
+    min-height: 100vh;
+    color: var(--stone--600);
+    line-height: 150%;
+    display: grid;
+    place-content: center;
+}
+
+hr {
+    border: 1px solid var(--stone--100);;
+}
+.recipe {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 45rem;
+
+}
+
+.recipe__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipe__body {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.recipe__section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    line-height: 140%;
+}
+
+.recipe__section--small {
+    background-color: var(--rose--50);
+    padding: 1.375rem;
+    border-radius: 1rem;
+}
+
+.recipe__section--list-container {
+    padding-left: 2rem;
+}
+
+.recipe__section ul, .recipe__section ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.recipe__section ul li, .recipe__section ol li {
+    padding-left: 1rem;
+}
+
+.recipe__section ol li::marker {
+    color: var(--brown--800); 
+    font-weight: bold;
+}
+.recipe__section ul li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.recipe__section table th,
+.recipe__section table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--stone--100);
+}
+
+.recipe__section table tr:last-child td,
+.recipe__section table tr:last-child th {
+    border-bottom: none;
+}
+
+.recipe__section table th {
+    text-align: left;
+    font-weight: (var(--weight--400));
+}
+
+.recipe__section table td {
+    color: var(--brown--800);
+    font-weight: var(--weight--700);
+}
+
+.recipe__section--title {
+    font-family: Young-Serif, serif;
+    font-weight: var(--weight--400);
+    font-size: 1.75rem;
+    color: var(--brown--800)
+}
+
+.recipe__section--main-title {
+    line-height: 100%;
+    font-size: 1.875rem;
+    color: var(--stone--900);
+}
+
+.recipe__section--small-title {
+    color: var(--rose--800);
+}
+
+@media (min-width: 800px) {
+    body {
+        padding: 2rem;
+    }
+
+    .recipe {
+        border-radius: 1rem;
+    }
+
+    .recipe__image-container {
+        padding: 2rem;
+        padding-bottom: 0;
+        border-radius: inherit;
+    }
+
+    .recipe__image {
+        border-radius: inherit;
+    }
+    
+    .recipe__section--main-title {
+        font-size: 2.5rem;
+    }
+}
+
+@keyframes my-message {
+    0% {
+        opacity:0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* extra */
+.atribution-container {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    animation: my-message 0.6s ease-out forwards;
+}
+.attribution {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--stone--900);
+    color: var(--white);
+}
+.attribution-footer {
+    text-align: end;
+}
+.attribution-footer button {
+    border: none;
+    background-color: var(--gray);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+.attribution-footer button:hover {
+    background-color: var(--rose--800);
+    color: var(--white)
+}
+.attribution a {
+    color: var(--gray);
+}
+.attribution a:hover {
+    color: var(--rose--800);
+}
