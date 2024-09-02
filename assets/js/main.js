@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const atributionContainer = document.createElement('article');
+    const atributionContainer = document.createElement('footer');
     atributionContainer.className = "atribution-container";
     atributionContainer.innerHTML = `
     <div class="attribution">
