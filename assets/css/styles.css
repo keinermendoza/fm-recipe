@@ -165,6 +165,9 @@ hr {
     }
 }
 
+
+/* extra */
+
 @keyframes my-message {
     0% {
         opacity:0;
@@ -176,7 +179,6 @@ hr {
     }
 }
 
-/* extra */
 .atribution-container {
     position: fixed;
     bottom: 0.5rem;
@@ -196,6 +198,7 @@ hr {
     text-align: end;
 }
 .attribution-footer button {
+    cursor: pointer;
     border: none;
     background-color: var(--gray);
     padding: 0.5rem 1rem;

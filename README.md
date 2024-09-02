@@ -10,8 +10,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Available on Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-card-component---my-very-fist-step-in-frontend-mentor-hm94GrKb1S)
-- Live Site URL: [Hosted on Vercel](https://fm-qr-code-rho.vercel.app/)
+- Solution URL: [Available on Frontend Mentor](https://www.frontendmentor.io/solutions/recipe-page-using-semantic-html-css-and-bem-metodology-FpqrumT-FD)
+- Live Site URL: [Hosted on Vercel](https://fm-recipe-beta.vercel.app/)
 
 ## My process
 
