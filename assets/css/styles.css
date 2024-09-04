@@ -94,6 +94,9 @@ hr {
     padding-left: 1rem;
 }
 
+.recipe__section ul li::marker {
+    font-size: 10px;
+}
 .recipe__section ol li::marker {
     color: var(--brown--800); 
     font-weight: bold;
@@ -143,7 +146,7 @@ hr {
 
 @media (min-width: 800px) {
     body {
-        padding: 2rem;
+        padding: 8rem 2rem;
     }
 
     .recipe {
